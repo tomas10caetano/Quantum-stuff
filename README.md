@@ -1,64 +1,39 @@
-<header>
+# Quantum Simulation & Error Mitigation Projects 
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+This repository contains advanced simulations of Open Quantum Systems and Many-Body Physics, developed using **Qiskit**. The projects focus on benchmarking digital quantum simulation techniques (Trotterization), exploring exotic phases of matter (Quantum Scars), and implementing hybrid Quantum-Classical error mitigation strategies.
 
-# Introduction to GitHub
-
-_Get started using GitHub in less than an hour._
-
-</header>
-
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
-
-## Finish
-
-_Congratulations, you've completed this course and joined the world of developers!_
-
-<img src=https://octodex.github.com/images/collabocats.jpg alt=celebrate width=300 align=right>
-
-Here's a recap of your accomplishments:
-
-- You learned about GitHub, repositories, branches, commits, and pull requests.
-- You created a branch, a commit, and a pull request.
-- You merged a pull request.
-- You made your first contribution! :tada:
-
-### What's next?
-
-If you'd like to make a profile README, use the quickstart instructions below or follow the instructions in the [Managing your profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) article.
-
-1. Make a new public repository with a name that matches your GitHub username.
-2. Create a file named `README.md` in its root. The "root" means not inside any folder in your repository.
-3. Edit the contents of the `README.md` file.
-4. If you created a new branch for your file, open and merge a pull request on your branch.
-5. Lastly, we'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github).
-
-Check out these resources to learn more or get involved:
-
-- Are you a student? Check out the [Student Developer Pack](https://education.github.com/pack).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+**Author:** Tomás Caetano  
+**Stack:** Python, Qiskit, Scikit-Learn, NumPy, Matplotlib
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+##  Featured Projects
 
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+### 1. AI-Driven Error Mitigation on the Ising Model
 
-</footer>
+An investigation into correcting hardware noise in NISQ devices using Machine Learning, compared against traditional physical mitigation methods.
+
+* **Physics:** Transverse Field Ising Model (TFIM) time dynamics.
+* **Techniques:**
+    * **Trotterization:** First-order decomposition for time evolution.
+    * **Zero-Noise Extrapolation (ZNE):** Implemented via Unitary Folding and Richardson Extrapolation.
+    * **Deep ZNE (AI):** Trained a **Random Forest Regressor** to map noisy expectation values to ideal results.
+* **Key Result:** The AI-driven approach significantly reduced the Root Mean Square Error (RMSE) compared to standard ZNE, effectively filtering out statistical variance while correcting bias.
+
+### 2. Quantum Scars in the PXP Model (Rydberg Atoms)
+
+A study of weak ergodicity breaking in constrained quantum systems, specifically modeling Rydberg atom arrays.
+
+* **Physics:** PXP Hamiltonian (Rydberg Blockade mechanism).
+* **Techniques:**
+    * **Exact Diagonalization:** Benchmarking ground truth dynamics.
+    * **Digital Simulation:** Implementing multi-controlled gates to mimic the kinetic constraints of the PXP model.
+* **Key Result:** Successfully observed **Quantum Many-Body Scars**—periodic revivals of fidelity and magnetization when initializing the system in the Néel state ($|1010...\rangle$), violating the Eigenstate Thermalization Hypothesis (ETH).
+
+
+##  Concepts Covered
+* **Open Quantum Systems** & Decoherence
+* **Hamiltonian Simulation** (Suzuki-Trotter)
+* **Topological Order** & Surface Codes (Theoretical background)
+* **Supervised Learning** for Quantum Error Correction
+
